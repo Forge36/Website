@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang='en'>
  <head>
-  <title>Basic HTML5 document</title>
+  <title>Gregory Mason's Resume</title>
   <meta charset='utf-8'>
+  <style>
+  *
+  {
+	padding:0;
+	margin:0;
+	font-family: "Segoe UI";
+  }
+  ul
+  {
+	padding-left:2em;
+  }
+  li
+  {
+	padding:.1em;
+  }
+  h2
+  {
+	position: relative;
+	overflow: hidden;
+	padding: .5em 0 0 0;
+  }
+  h2:after {
+    position: absolute;
+    overflow: hidden;
+	margin-left:5px;
+    width: 100%;
+    height: 2px;
+    content: '\a0';
+    background-color: white;
+	top: 65%;
+  }
+  h3
+  {
+	padding: .7em 0 .3em 0;
+  }
+  h4
+  {
+	font-size: .9em;
+	padding-left: .2em;
+	padding-bottom: .4em;
+  }
+  body
+  {
+	background-color: #e86464;
+  }
+  .body
+  {
+    margin: auto;
+	display: grid;
+	grid-template-areas: "sidebar mainpanel";
+	grid-template-columns: 290px auto;
+	max-width: 1000px;
+  }
+  .sidebar
+  {
+	grid-area: sidebar;
+	background-color: #c61d1d;
+	color: white;
+	padding: 10px 1em .5em 1em;
+  }
+  .contactInfo
+  {
+	padding-left: .5em;
+  }
+  .sidebar h3
+  {
+	padding
+  }
+  .sidebar a
+  {
+	color: white;
+	text-decoration: none;
+  }
+  .sidebar p
+  {
+	padding-left: .5em;
+  }
+  .mainpanel
+  {
+	padding: 10px .5em 1em 1em;
+	background-color: white;
+	grid-area: mainpanel;
+  }
+  .team
+  {
+	float: right;
+  }
+  </style>
  </head>
  <body>
- Work In Progress
- Update Test.
+ <div class="body">
+ <div class="sidebar">
+ <div>
+ <h1>Gregory Mason</h1>
+ <div class="contactInfo">
+ <span>Software Architect</span>
+ <p><a href="tel:(612)-208-6552">(612)-208-6552</a></p>
+ <p><a href="mailto:gregory.mason.366@gmail.com">gregory.mason.366@gmail.com</a></p>
+ <p><a href="https://www.linkedin.com/in/gregorymason366">/in/gregorymason366</a></p>
+ <p><a href="https://github.com/Forge36">Forge36</a></p>
+ </div>
+ </div>
+ <div>
+ <h2>Overview</h2>
+ <p>I focus on frameworks and tools consumed by other developers to help release new features faster.</p>
+ </div>
+ <div>
+ <h2>Experience</h2>
+ <!--todo: Graphics?-->
+ <p>C#, .NET Framwork, M</p>
+ <p>JavaScript, TypeScript, SVN</p>
+ <p>VB6, .Net Core 5, Git</p>
+ <p>Java, C</p>
+ <p>LaTeX, React</p>
+ </div>
+ <div>
+ <h2>Education</h2>
+ <p>BS - Computer Science</p>
+ <p>University of Wisconsin - Madison</p>
+ <p>2019 - 2012</p>
+ </div>
+ <div>
+ <h2>Scouting</h2>
+ <p>Eagle Scout - Silver Palm</p>
+ </div>
+ <div>
+ <h2>Languages</h2>
+ <p>English - Native</p>
+ <p>German - Conversational</p>
+ </div>
+ </div>
+ <div class="mainpanel">
+ <div class="role">
+<h1>Experience</h1>
+<h3>August 2020 - Present</h3>
+<h4>
+<span>Software Systems Architect</span>
+<span class="team">All Epic - <a href="https://www.epic.com/">Epic</a></span>
+</h4>
+<ul>
+	<li> Codified style rules using .editorconfig</li>
+	<li> Automate code integrity: audits, fixes, and pull requests to reduce overhead in finding and fixing common coding mistakes</li>
+	<li> Javascript to Typescript migration to reduce friction for developers</li>
+	<li> .Net Framework to .Net Core transition of a windows forms application</li>
+	<li> Developed a tool for soliciting feedback on recent collaborations</li>
+</ul>
+</div>
+
+ <div class="role">
+<h3>October 2017 - August 2020</h3>
+<h4>
+<span>Senior Software Systems Developer</span>
+<span class="team">Reports - <a href="https://www.epic.com/">Epic</a> </span>
+</h4>
+<ul>
+	<li> Extension framework to allow for loosely coupled, interactive reporting content</li>
+	<li> Platform Migration from VB6 client application to Web Application. Javascript/TypeScript/HTML/CSS/C\#/.NET</li>
+	<li> Project management and tracking for large scale coding changes</li>
+	<li> Mentor new employees Design and coding standards</li>
+	<li> Improved existing review tools to reduce false positions and increase developer confidence in tooling assistance</li>
+	<li> Implemented a project time tracking assistant to better revise project time estimates</li>
+</ul>
+</div>
+
+ <div class="role">
+<h3>December 2016 - October 2017</h3>
+<h4>
+<span>Software Developer II</span>
+<span class="team">Reports - <a href="https://www.epic.com/">Epic</a> </span>
+</h4>
+<ul>
+	<li> Fixes, Investigations, and cross team education for Security issues</li>
+	<li> Created a parsing engine to assist in locating, security vulnerabilities, dead code paths, and unused translations within the software</li>
+	<li> Performance improvements reducing login time by 500ms, component initialization by 80% (400ms) </li>
+</ul>
+</div>
+ <div class="role">
+<h3>July 2012 - December 2016</h3>
+<h4>
+<span>Software Developer</span>
+<span class="team">Rich Text Document Editor - <a href="https://www.epic.com/">Epic</a></span>
+</h4>
+<ul>
+	<li> Integrated test bench for regression testing of third party updates</li>
+	<li> Improved keyboard accessibility for Section 508 and WCAG compliance</li>
+	<li> Visual display improvements for users with Photophobia</li>
+	<li> Managed 3rd Party subcomponent integration debugging, code review, and fix requests</li>
+</ul>
+</div>
+
+ <div class="role">
+<h3>May 2011 - December 2011</h3>
+<h4>
+<span>Software Engineer Intern (Remote)</span>
+<span class="team"><a href="http://www.mavericksoftware.com/">Maverick Software Consulting</a></span>
+</h4>
+<ul>
+	<li> UI automation testing with Ranorex, framework designed for compatibility with Selenium. Converted existing Java tests to C\# using the new framework</li>
+	<li> Improved suite of tests improving full regression testing by 300%</li>
+	<li> Developed a testing framework to allow distributed execution of tests within the testing suite</li>
+</ul>
+</div>
+<div class="role">
+<h3>September 2010 - May 2011</h3>
+<h4>
+<span>Technology Support Specialist</span>
+<span class="team"><a href="https://wsb.wisc.edu/">Wisconsin School of Business</a></span>
+</h4>
+<ul>
+	<li> Customer Service and one on one support with Faculty and Staff</li>
+	<li> Use of Altiris for managing system images, motoring to manage rolling updates</li>
+	<li> Improved rollout process to avoid downtime</li>
+	<li> Hardware and software troubleshooting end user devices</li>
+</ul>
+  </div>
+  </div>
  </body>
 </html>
