@@ -51,12 +51,21 @@
       background-color: #e86464;
     }
 
-    .body {
-      margin: auto;
-      display: grid;
-      grid-template-areas: "sidebar mainpanel";
-      grid-template-columns: 290px auto;
-      max-width: 1000px;
+    @media screen and (min-width: 660px) {
+      .body {
+        margin: auto;
+        display: grid;
+        grid-template-areas: "sidebar mainpanel";
+        grid-template-columns: 300px auto;
+        max-width: 1000px;
+      }
+    }
+
+    @media screen and (max-width: 660px) {
+      .sidebar {
+        margin: auto;
+        max-width: 400px;
+      }
     }
 
     .sidebar {
@@ -64,6 +73,11 @@
       background-color: #c61d1d;
       color: white;
       padding: 10px 1em .5em 1em;
+    }
+
+    .image {
+      width: 16px;
+      height: 16px;
     }
 
     .contactInfo {
@@ -98,10 +112,11 @@
         <h1>Gregory Mason</h1>
         <div class="contactInfo">
           <span>Software Architect</span>
-          <p><a href="tel:(612)-208-6552">(612)-208-6552</a></p>
-          <p><a href="mailto:gregory.mason.366@gmail.com">gregory.mason.366@gmail.com</a></p>
-          <p><a href="https://www.linkedin.com/in/gregorymason366">/in/gregorymason366</a></p>
-          <p><a href="https://github.com/Forge36">Forge36</a></p>
+          <p><a href="tel:(612)-208-6552"><img alt="Phone Icon" class="image" src="./Images/phone.png"> (612)-208-6552</a></p>
+          <p><a href="mailto:gregory.mason.366@gmail.com">✉ gregory.mason.366@gmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/gregorymason366"><img alt="Linkedin Logo" class="image" src="./Images/linkedin.png"> /in/gregorymason366</a></p>
+          <p><a href="https://github.com/Forge36"> <img alt="Github Logo" class="image" src="./Images/GitHub-Mark-Light-32px.png"> Forge36</a>
+          </p>
         </div>
       </div>
       <div>
