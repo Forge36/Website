@@ -20,15 +20,18 @@
     li {
       padding: .1em;
     }
-
-    h2 {
+    
+    h2.title{
+      text-align: center;
+    }
+    h2:not(.title) {
       position: relative;
       font-size: 1.17em;
       overflow: hidden;
       padding: .5em 0 0 0;
     }
 
-    h2:after {
+    h2:not(.title):after {
       position: absolute;
       overflow: hidden;
       margin-left: 5px;
@@ -62,17 +65,25 @@
         grid-template-columns: 300px auto;
         max-width: 1000px;
       }
+
+      .sidebar p {
+        padding-left: .5em;
+      }
+    
+      .contactInfo {
+        padding-left: .5em;
+      }
     }
 
     @media screen and (max-width: 660px) {
       .sidebar {
         margin: auto;
-        max-width: 400px;
+        max-width: 450px;
       }
       .sidebar a {
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-size: 1.5em;
+		font-size: 1.8em;
       }
     }
 
@@ -98,18 +109,10 @@
     {
       text-align: center;
     }
-    
-    .contactInfo {
-      padding-left: .5em;
-    }
 
     .sidebar a {
       color: white;
       text-decoration: none;
-    }
-
-    .sidebar p {
-      padding-left: .5em;
     }
 
     .mainpanel {
@@ -127,11 +130,11 @@
 <body>
   <div class="body">
     <div class="sidebar">
-      <div>
+      <div class="header">
         <h1>Gregory Mason</h1>
         <img alt="Picture of Gregory Mason" class="profileImage" src="./Images/gregory.mason.jpg" width="150" height="150">
         <div class="contactInfo">
-          <span>Software Architect</span>
+          <h2 class="title">Software Architect</h2>
           <p><a href="tel:(612)-208-6552"><img alt="Phone Icon" class="image" src="./Images/phone.png"> (612)-208-6552</a></p>
           <p><a href="mailto:gregory.mason.366@gmail.com">✉ gregory.mason.366@gmail.com</a></p>
           <p><a href="https://www.linkedin.com/in/gregorymason366"><img alt="Linkedin Logo" class="image" src="./Images/linkedin.png"> /in/gregorymason366</a></p>
